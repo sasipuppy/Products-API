@@ -1,6 +1,6 @@
 package com.product.api;
 
-import static com.product.api.Category.Kitchen;
+import static com.product.api.Category.Electronics;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.BeforeEach;
@@ -22,7 +22,7 @@ class ProductTest {
 	 * Variable declaration and initialisation.
 	 * Declaring the variables as static final means they can never change from their initial value.
 	 */
-	private static final Category TYPE=Kitchen;
+	private static final Category TYPE=Electronics;
 	private static final String NAME= "HP Pavilion Laptop";
 	private static final double PRICE= 6798.87;
 	
@@ -58,7 +58,7 @@ class ProductTest {
 	 */
 	@Test
 	public void testCategory(){
-		Category Expected =Kitchen;
+		Category Expected =Electronics;
 		assertEquals(Expected,product.getCategory());
 	}
 
