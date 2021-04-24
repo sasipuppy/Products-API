@@ -6,7 +6,7 @@ phases:
       - echo Entered prebuild phase
   build:
     commands:
-      - echo Build started on
+      - echo Build started
       - mvn clean package
   post_build:
     commands:
